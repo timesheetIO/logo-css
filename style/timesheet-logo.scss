@@ -1,0 +1,73 @@
+
+$size: 500px;
+$unit: $size/100;
+$background: #ff8800;
+$clock: #ffffff;
+
+body {
+  margin: 10;
+  padding: 10;
+}
+
+.timesheet {
+  width: $size;
+  height: $size;
+  background-color: $background;
+  position: absolute;
+}
+
+.circle {
+  border: $unit*6 solid $clock;
+  width: $unit*68;
+  height: $unit*68;
+  position: absolute;
+  top: $unit*10;
+  left: $unit*10;
+  border-radius: $unit*74;
+}
+
+.shadow {
+  position: absolute;
+  width: $unit*60;
+  height: $unit*60;
+  top: $unit*20;
+  left: $unit*20;
+  opacity: 0.5;
+  z-index: 0;
+  border-radius: $unit*30;
+  background-image:
+    linear-gradient(-45deg, transparent 50%, $clock 50%),
+    linear-gradient(0deg, transparent 50%, $clock 50%);
+}
+
+.dot {
+  background-color: $clock;
+  width: $unit*12;
+  height: $unit*12;
+  position: absolute;
+  border-radius: $unit*6;
+  top: $unit*44;
+  left: $unit*44;
+  z-index: 100;
+}
+
+.minute {
+  background-color: $clock;
+  width: $unit*30;
+  height: $unit*6;
+  position: absolute;
+  top: $unit*47;
+  left: $unit*50;
+  z-index: 100;
+}
+
+.hour {
+  background-color: $clock;
+  width: $unit*31;
+  height: $unit*6;
+  position: absolute;
+  top: $unit*57;
+  right: $unit*45;
+  transform: rotate(-45deg);
+  z-index: 100;
+}

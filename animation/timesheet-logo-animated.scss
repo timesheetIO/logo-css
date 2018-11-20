@@ -1,0 +1,82 @@
+@import "../style/timesheet-logo";
+
+.spinner {
+  position: absolute;
+  width: $unit*60;
+  height: $unit*60;
+  top: $unit*20;
+  left: $unit*20;
+  z-index: 1;
+  border-radius: $unit*30;
+  background-image: none;
+  animation: rotateSpinner 1s linear;
+}
+
+.minute {
+  transform-origin: left center;
+  animation: rotateMinute 1s linear;
+}
+
+@keyframes rotateMinute {
+  0% {
+    transform: rotate(-225deg);
+  }
+}
+
+@keyframes rotateSpinner {
+  0% {
+    background-image:
+      linear-gradient(0deg, transparent 50%, $background 50%),
+      linear-gradient(-45deg, transparent 50%, $background 50%);
+  }
+
+  10% {
+    background-image:
+      linear-gradient(-22deg, transparent 50%, $background 50%);
+  }
+
+  20% {
+    background-image:
+      linear-gradient(0deg, transparent 50%, $background 50%);
+  }
+
+  30% {
+    background-image:
+      linear-gradient(22deg, transparent 50%, $background 50%);
+  }
+
+  40% {
+    background-image:
+      linear-gradient(45deg, transparent 50%, $background 50%);
+  }
+
+  50% {
+    background-image:
+      linear-gradient(67deg, transparent 50%, $background 50%);
+  }
+
+  60% {
+    background-image:
+      linear-gradient(90deg, transparent 50%, $background 50%);
+  }
+
+  70% {
+    background-image:
+      linear-gradient(112deg, transparent 50%, $background 50%);
+  }
+
+  80% {
+    background-image:
+      linear-gradient(134deg, transparent 50%, $background 50%);
+  }
+
+  90% {
+    background-image:
+      linear-gradient(156deg, transparent 50%, $background 50%);
+  }
+
+  100% {
+    background-image:
+      linear-gradient(180deg, transparent 50%, $background 50%);
+  }
+}

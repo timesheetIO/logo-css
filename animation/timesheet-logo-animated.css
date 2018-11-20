@@ -1,0 +1,102 @@
+body {
+  margin: 10;
+  padding: 10; }
+
+.timesheet {
+  width: 500px;
+  height: 500px;
+  background-color: #ff8800;
+  position: absolute; }
+
+.circle {
+  border: 30px solid #ffffff;
+  width: 340px;
+  height: 340px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border-radius: 370px; }
+
+.shadow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 100px;
+  left: 100px;
+  opacity: 0.5;
+  z-index: 0;
+  border-radius: 150px;
+  background-image: linear-gradient(-45deg, transparent 50%, #ffffff 50%), linear-gradient(0deg, transparent 50%, #ffffff 50%); }
+
+.dot {
+  background-color: #ffffff;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-radius: 30px;
+  top: 220px;
+  left: 220px;
+  z-index: 100; }
+
+.minute {
+  background-color: #ffffff;
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  top: 235px;
+  left: 250px;
+  z-index: 100; }
+
+.hour {
+  background-color: #ffffff;
+  width: 155px;
+  height: 30px;
+  position: absolute;
+  top: 285px;
+  right: 225px;
+  transform: rotate(-45deg);
+  z-index: 100; }
+
+.spinner {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+  border-radius: 150px;
+  background-image: none;
+  animation: rotateSpinner 1s linear; }
+
+.minute {
+  transform-origin: left center;
+  animation: rotateMinute 1s linear; }
+
+@keyframes rotateMinute {
+  0% {
+    transform: rotate(-225deg); } }
+@keyframes rotateSpinner {
+  0% {
+    background-image: linear-gradient(0deg, transparent 50%, #ff8800 50%), linear-gradient(-45deg, transparent 50%, #ff8800 50%); }
+  10% {
+    background-image: linear-gradient(-22deg, transparent 50%, #ff8800 50%); }
+  20% {
+    background-image: linear-gradient(0deg, transparent 50%, #ff8800 50%); }
+  30% {
+    background-image: linear-gradient(22deg, transparent 50%, #ff8800 50%); }
+  40% {
+    background-image: linear-gradient(45deg, transparent 50%, #ff8800 50%); }
+  50% {
+    background-image: linear-gradient(67deg, transparent 50%, #ff8800 50%); }
+  60% {
+    background-image: linear-gradient(90deg, transparent 50%, #ff8800 50%); }
+  70% {
+    background-image: linear-gradient(112deg, transparent 50%, #ff8800 50%); }
+  80% {
+    background-image: linear-gradient(134deg, transparent 50%, #ff8800 50%); }
+  90% {
+    background-image: linear-gradient(156deg, transparent 50%, #ff8800 50%); }
+  100% {
+    background-image: linear-gradient(180deg, transparent 50%, #ff8800 50%); } }
+
+/*# sourceMappingURL=timesheet-logo-animated.css.map */
