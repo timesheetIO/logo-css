@@ -1,2 +1,2 @@
 # logo-css
-Logo in pure CSS
+Timesheet Logo in pure CSS
